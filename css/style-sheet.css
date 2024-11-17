@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+  --btn-color: #2a81c4;
+  --btn-trans-color: #2ed5db;
+  --btn-text-color: #fcfbfa;
+}
+
+body {
+  color: #fff;
+  background-color: #212121;
+  padding: 1.5rem;
+}
+
+/* styling of search section */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+
+/* styling of header */
+.site-header {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  padding-bottom: 35px;
+}
+
+/* styling of "car year min" search bar */
+.search-container #car-year-search-min #car-year-input-min {
+  display: flex;
+  text-align: center;
+  height: 35px;
+  width: 275px;
+}
+
+/* styling of hyphen */
+.search-btn #hyphen {
+  padding: 10px;
+}
+
+/* styling of "car year max" search bar */
+.search-container #car-year-search-max #car-year-input-max {
+  display: flex;
+  text-align: center;
+  height: 35px;
+  width: 100px;
+}
+
+/* styling of "car make" search bar */
+.search-container #make-section {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 175px;
+}
+
+.search-container #make-section #car-make {
+  display: flex;
+  text-align: center;
+}
+
+.search-container #make-section #car-make-label {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* styling of "mileage" search bar */
+.search-container #car-mileage-search #car-mileage-input {
+  display: flex;
+  text-align: center;
+  height: 35px;
+  width: 190px;
+}
+
+/* styling of "price" search bar */
+.search-container #car-price-search #car-price-input {
+  display: flex;
+  text-align: center;
+  height: 35px;
+}
+
+/* styling of "color" search bar */
+.search-container #color-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container #color-section #car-color {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 150px;
+}
+
+.search-container #color-section #car-color-label {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* styling of clear btn */
+.search-container .clear-btn {
+  height: 35px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #f0df46;
+  transition: background 0.3s ease;
+}
+
+.search-container .clear-btn:hover {
+  background-color: #e48c4c;
+}
+
+.search-container .clear-btn a {
+  text-decoration: none;
+}
+
+/* styling of search btn */
+.search-container .search-btn {
+  border-radius: 10px;
+  background-color: var(--btn-color);
+  height: 35px;
+  width: 100px;
+  transition: background 0.3s ease;
+}
+
+.search-container .search-btn:hover {
+  background-color: var(--btn-trans-color);
+}
+
+.search-container .search-btn a {
+  text-decoration: none;
+  color: var(--btn-text-color);
+}
+
+/* styling of product section */
+#result-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* styling for individual product cards */
+#result-display .product-card {
+  padding: 30px;
+}
+
+#result-display .product-card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  width: 350px;
+  height: 500px;
+}
+
+#result-display .product-card h1 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+#result-display .product-card p {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
